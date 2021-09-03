@@ -34,8 +34,6 @@
                 <%= render "favorites/favorite-btn", book: @book  %>
                </td>
 
-               
-
 
                 <% if @book.user == current_user %>
 
@@ -51,7 +49,7 @@
 
                </tr>
             </table>
-            
+
             <div id="book_comments_<%= @book.id %>">
               <%= render "book_comments/book_comments", book: @book  %>
             </div>
